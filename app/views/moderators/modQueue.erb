@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moderator</title>
+    <link rel="stylesheet" href="../application.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+
+        <div class="primary-content">
+          <%= link_to 'Next', next_path, remote: true, method: :post, rel: "nofollow", :class => "button" %>
+          <br>
+          <br>
+          <button onclick="window.location.href=#" class="button">Push to Back</button>
+          <br>
+          <br>
+          <%= link_to 'Shutdown', shutdown_path, remote: true, method: :post, rel: "nofollow", :class=>"button", data: { confirm: "You sure?" } %>
+
+          <button onclick = "window.location.href='../help.html'" class ="button small-button bottom-corner"> Help </button>
+          
+        </div><!-- End .primary-content-->
+
+  </body>
+</html>
+
+

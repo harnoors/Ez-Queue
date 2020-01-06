@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create</title>
+    <link rel="stylesheet" href="../applications.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+
+        <div class="primary-content">
+                <div class = "create-form">
+                    <%= form_for(@room) do |f| %>
+                        <%= render 'shared/room_error_messages' %>
+                        <%= f.text_field :password, class: 'form-control', placeholder: "Password" %>
+                        <br>
+                        <%= f.submit "Create Queue", class: "button small-button" %>
+                    <% end %>
+                </div>
+                <button onclick = "window.location.href='../help.html'" class ="button small-button bottom-corner"> Help </button>
+
+        </div><!-- End .primary-content-->
+    </body>
+</html>

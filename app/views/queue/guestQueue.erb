@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guest</title>
+    <link rel="stylesheet" href="../application.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+
+        <div class="primary-content">
+            <div id="queue-position" class = "queue-position">
+              <%= image_tag("Shteve.PNG", :size => "406x400", :alt => "Steven says you are logged in")%>
+              <%= simple_format(@initialPos, id: "guest-position") %>
+            </div>
+              <br>
+              <br>
+              <a class="button medium-button" href="../home.html">Back To Home</a>
+              <button onclick = "window.location.href='../help.html'" class ="button small-button bottom-corner"> Help </button>
+        </div><!-- End .primary-content-->
+
+  </body>
+</html>

@@ -1,0 +1,10 @@
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://redistogo:c23c8e0b277d9182b8da0dcdc9520a04@hammerjaw.redistogo.com:10286/
+  channel_prefix: ez_queue_production
