@@ -8,3 +8,4 @@ To get things running:
 1) $bundle install --without production
 2) $rails db:migrate
 
+Heroku: https://ezqueue.herokuapp.com/createroom
